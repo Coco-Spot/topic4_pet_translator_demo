@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet Translator Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="phone" aria-label="Pet translator mobile demo">
+        <header class="top-bar">
+          <div>
+            <p class="eyebrow">Collar Link</p>
+            <h1>Pet Translator</h1>
+          </div>
+          <div class="status-dot" title="Mock collar online"></div>
+        </header>
+
+        <section class="pet-card">
+          <div class="avatar" id="petAvatar">M</div>
+          <div>
+            <h2 id="petName">Mochi</h2>
+            <p id="petMeta">Shiba Inu · dog</p>
+          </div>
+          <select id="scenarioSelect" aria-label="Choose demo scenario"></select>
+        </section>
+
+        <section class="wave-panel">
+          <div class="wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <button id="translateButton" type="button">Record & Translate</button>
+        </section>
+
+        <section class="chat" id="chatLog" aria-live="polite"></section>
+
+        <section class="inspector">
+          <div>
+            <span>Classification</span>
+            <strong id="labelText">bark_alert</strong>
+          </div>
+          <div>
+            <span>Confidence</span>
+            <strong id="confidenceText">0.88</strong>
+          </div>
+          <div>
+            <span>Evidence</span>
+            <p id="evidenceText">High energy pattern consistent with alert barking.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

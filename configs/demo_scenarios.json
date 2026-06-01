@@ -1,0 +1,100 @@
+{
+  "scenarios": [
+    {
+      "id": "dog_door_alert",
+      "title": "Dog hears footsteps near the door",
+      "audio_path": null,
+      "pet": {
+        "name": "Mochi",
+        "species": "dog",
+        "breed": "Shiba Inu",
+        "personality": "dramatic, loyal, easily offended",
+        "owner_notes": "Mochi barks when delivery workers approach the apartment door."
+      },
+      "expected_sound": "bark",
+      "context": "the front door at 8:30 PM",
+      "recent_history": [
+        "A delivery arrived yesterday at the same time.",
+        "Mochi received a treat after alerting the owner."
+      ],
+      "mock_signal": {
+        "duration_seconds": 1.1,
+        "energy": 0.78,
+        "zero_crossing_rate": 0.19,
+        "spectral_centroid_hz": 2100
+      }
+    },
+    {
+      "id": "cat_empty_bowl",
+      "title": "Cat complains near the food bowl",
+      "audio_path": null,
+      "pet": {
+        "name": "Luna",
+        "species": "cat",
+        "breed": "British Shorthair",
+        "personality": "royal, calm, very food-motivated",
+        "owner_notes": "Luna meows sharply when the bowl is empty."
+      },
+      "expected_sound": "meow",
+      "context": "the kitchen food bowl",
+      "recent_history": [
+        "Breakfast was delayed by ten minutes.",
+        "The bowl was empty in the last check-in."
+      ],
+      "mock_signal": {
+        "duration_seconds": 0.8,
+        "energy": 0.47,
+        "zero_crossing_rate": 0.21,
+        "spectral_centroid_hz": 2600
+      }
+    },
+    {
+      "id": "cat_sofa_purr",
+      "title": "Cat purrs during sofa time",
+      "audio_path": null,
+      "pet": {
+        "name": "Bean",
+        "species": "cat",
+        "breed": "Ragdoll",
+        "personality": "soft, affectionate, slightly smug",
+        "owner_notes": "Bean purrs when brushed behind the ears."
+      },
+      "expected_sound": "purr",
+      "context": "the sofa grooming session",
+      "recent_history": [
+        "The owner brushed Bean for three minutes.",
+        "Bean leaned toward the brush instead of walking away."
+      ],
+      "mock_signal": {
+        "duration_seconds": 2.2,
+        "energy": 0.18,
+        "zero_crossing_rate": 0.045,
+        "spectral_centroid_hz": 650
+      }
+    },
+    {
+      "id": "dog_vet_whine",
+      "title": "Dog waits outside the vet room",
+      "audio_path": null,
+      "pet": {
+        "name": "Nova",
+        "species": "dog",
+        "breed": "Border Collie",
+        "personality": "smart, sensitive, negotiation-oriented",
+        "owner_notes": "Nova whines softly in stressful new locations."
+      },
+      "expected_sound": "whine",
+      "context": "the veterinary clinic waiting area",
+      "recent_history": [
+        "Nova saw another dog enter the exam room.",
+        "The owner has been sitting quietly for five minutes."
+      ],
+      "mock_signal": {
+        "duration_seconds": 3.4,
+        "energy": 0.32,
+        "zero_crossing_rate": 0.11,
+        "spectral_centroid_hz": 1250
+      }
+    }
+  ]
+}

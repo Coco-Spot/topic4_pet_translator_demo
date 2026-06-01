@@ -1,0 +1,142 @@
+[
+  {
+    "scenario_id": "dog_door_alert",
+    "pet": {
+      "name": "Mochi",
+      "species": "dog",
+      "breed": "Shiba Inu"
+    },
+    "input_context": "the front door at 8:30 PM",
+    "features": {
+      "duration_seconds": 1.1,
+      "energy": 0.78,
+      "zero_crossing_rate": 0.19,
+      "spectral_centroid_hz": 2100.0,
+      "mock_mel_summary": [
+        0.8067,
+        0.2159,
+        0.5262,
+        0.1955,
+        0.7522,
+        0.1845,
+        0.5469,
+        0.2491
+      ]
+    },
+    "classification": {
+      "label": "bark_alert",
+      "confidence": 0.88,
+      "evidence": [
+        "high energy pattern consistent with alert barking",
+        "scenario context: the front door at 8:30 PM"
+      ]
+    },
+    "translation": "Mochi: Human, I have detected suspicious activity near the front door at 8:30 PM. Please investigate while I remain extremely brave. Memory says: A delivery arrived yesterday at the same time. | Mochi received a treat after alerting the owner. Personality filter: dramatic, loyal, easily offended.",
+    "safety_note": "This is an entertainment and research demo. It classifies sound patterns; it does not prove literal pet language understanding."
+  },
+  {
+    "scenario_id": "cat_empty_bowl",
+    "pet": {
+      "name": "Luna",
+      "species": "cat",
+      "breed": "British Shorthair"
+    },
+    "input_context": "the kitchen food bowl",
+    "features": {
+      "duration_seconds": 0.8,
+      "energy": 0.47,
+      "zero_crossing_rate": 0.21,
+      "spectral_centroid_hz": 2600.0,
+      "mock_mel_summary": [
+        0.4915,
+        0.2392,
+        0.66,
+        0.1416,
+        0.4401,
+        0.1961,
+        0.6648,
+        0.19
+      ]
+    },
+    "classification": {
+      "label": "meow_hungry",
+      "confidence": 0.8,
+      "evidence": [
+        "bright spectral centroid suggests a sharp meow",
+        "scenario context: the kitchen food bowl"
+      ]
+    },
+    "translation": "Luna: Esteemed food provider, my bowl situation near the kitchen food bowl requires urgent executive attention. Memory says: Breakfast was delayed by ten minutes. | The bowl was empty in the last check-in. Personality filter: royal, calm, very food-motivated.",
+    "safety_note": "This is an entertainment and research demo. It classifies sound patterns; it does not prove literal pet language understanding."
+  },
+  {
+    "scenario_id": "cat_sofa_purr",
+    "pet": {
+      "name": "Bean",
+      "species": "cat",
+      "breed": "Ragdoll"
+    },
+    "input_context": "the sofa grooming session",
+    "features": {
+      "duration_seconds": 2.2,
+      "energy": 0.18,
+      "zero_crossing_rate": 0.045,
+      "spectral_centroid_hz": 650.0,
+      "mock_mel_summary": [
+        0.2043,
+        0.0432,
+        0.1364,
+        0.4135,
+        0.1775,
+        0.0688,
+        0.1907,
+        0.4467
+      ]
+    },
+    "classification": {
+      "label": "purr_happy",
+      "confidence": 0.88,
+      "evidence": [
+        "low energy and low zero-crossing rate resemble a purr",
+        "scenario context: the sofa grooming session"
+      ]
+    },
+    "translation": "Bean: Your service is acceptable. Continue the current comfort protocol near the sofa grooming session. Memory says: The owner brushed Bean for three minutes. | Bean leaned toward the brush instead of walking away. Personality filter: soft, affectionate, slightly smug.",
+    "safety_note": "This is an entertainment and research demo. It classifies sound patterns; it does not prove literal pet language understanding."
+  },
+  {
+    "scenario_id": "dog_vet_whine",
+    "pet": {
+      "name": "Nova",
+      "species": "dog",
+      "breed": "Border Collie"
+    },
+    "input_context": "the veterinary clinic waiting area",
+    "features": {
+      "duration_seconds": 3.4,
+      "energy": 0.32,
+      "zero_crossing_rate": 0.11,
+      "spectral_centroid_hz": 1250.0,
+      "mock_mel_summary": [
+        0.3123,
+        0.0815,
+        0.2893,
+        0.6835,
+        0.347,
+        0.1356,
+        0.3132,
+        0.6552
+      ]
+    },
+    "classification": {
+      "label": "whine_anxious",
+      "confidence": 0.8,
+      "evidence": [
+        "longer sustained signal resembles a whine",
+        "scenario context: the veterinary clinic waiting area"
+      ]
+    },
+    "translation": "Nova: I am not panicking, but I would appreciate emotional backup around the veterinary clinic waiting area. Memory says: Nova saw another dog enter the exam room. | The owner has been sitting quietly for five minutes. Personality filter: smart, sensitive, negotiation-oriented.",
+    "safety_note": "This is an entertainment and research demo. It classifies sound patterns; it does not prove literal pet language understanding."
+  }
+]
