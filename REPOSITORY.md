@@ -3,7 +3,7 @@
 Repository URL:
 
 ```text
-TODO: https://github.com/<team-or-member>/<repo-name>
+https://github.com/Coco-Spot/topic4_pet_translator_demo
 ```
 
 Visibility:
